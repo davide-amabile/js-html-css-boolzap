@@ -108,7 +108,42 @@
   width: 100%;
   height: 55px;
   background-color: #8edafc;
+  padding: 10px 10px;
 }
+
+.second_box_sinistra i {
+  font-size: 13px;
+  background-color: #fff;
+  color: #8edafc;
+  border-radius: 50px;
+  padding: 10px;
+  display: inline;
+}
+
+.second_box_sinistra div .notifiche {
+  padding: 0px 5px;
+  line-height: 55px;
+  background-color: #8edafc;
+}
+
+.second_box_sinistra div p {
+  background-color: #8edafc;
+  padding: 0 5px;
+}
+
+.second_box_sinistra div p.primo {
+  font-size: 13px;
+  color: #436777;
+}
+
+.second_box_sinistra div p.secondo {
+  text-decoration: underline;
+  font-size: 10px;
+  background-color: #8edafc;
+  height: 77%;
+  color:#6ca3bc;
+}
+
 /* / ricevi notifiche */
 
 /* search */
