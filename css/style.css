@@ -48,12 +48,59 @@
 }
 /*/ solonna destra */
 
+/* colonna sinistra */
 /* div img e info profilo */
 .first_box_sinistra {
   width: 100%;
   height: 45px;
   background-color: #eaeaea;
+  border-right: 1px solid grey;
+  justify-content: space-between;
 }
+
+/* img profilo personale */
+.box_img_profilo {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  padding-top: 5px;
+  background-color: #eaeaea;
+}
+
+.img_profilo {
+  max-width: 35px;
+  border-radius: 50px;
+  line-height: 45px;
+}
+/* /img profilo personale */
+
+/* icone primo boc sinistra */
+.icon_box_profilo {
+  width: 30%;
+  height: 100%;
+}
+
+.icon_box_profilo ul {
+  background-color: #eaeaea;
+
+}
+
+.icon_box_profilo ul li {
+  width: 30%;
+  display:inline-block;
+  line-height: 45px;
+  text-align: center;
+  padding: 0 5px;
+  background-color: #eaeaea;
+  color: grey;
+}
+
+.icon_box_profilo ul li i {
+  background-color: #eaeaea;
+}
+/*/ icone primo boc sinistra */
+
+
 /* div img e info profilo */
 
 /* ricevi notifiche */
@@ -81,6 +128,9 @@
 }
 /*/ box profili utenti  */
 
+/*/ colonna sinistra */
+
+/* colonna destra */
 /* div nome utente */
 .first_box_destra {
   width: 100%;
@@ -105,3 +155,4 @@
     background-color: violet;
   }
   /* <!-- /div tastiera --> */
+  /* /colonna destra */
