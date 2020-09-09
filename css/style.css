@@ -11,9 +11,9 @@
 
 
 /* colore sfondo pagina */
-* {
+/* * {
   background-color: #d9dbd3;
-}
+} */
 
 /* bara verde sfondo */
 .green_sfondo {
@@ -230,6 +230,30 @@ div.notifiche p.second  {
   height: calc(100% - 90px);
   background-color: lightblue;
   overflow-y: scroll;
+  padding: 50px 50px;
+}
+
+.message_row .messaggio p {
+  max-width: 200px;
+  border-radius: 30px;
+  padding: 10px 10px;
+
+}
+
+/* .messaggio p {
+  max-width: 200px;
+} */
+
+.end {
+  justify-content: flex-end;
+}
+
+.green {
+  background-color: green;
+}
+
+.white {
+  background-color: #fff;
 }
 /* div chat */
 
