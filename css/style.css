@@ -233,10 +233,11 @@ div.notifiche p.second  {
   padding: 50px 50px;
 }
 
-.message_row .messaggio p {
+.message_row .messaggio  {
   max-width: 200px;
   border-radius: 30px;
   padding: 10px 10px;
+  margin:20px;
 
 }
 
