@@ -25,10 +25,9 @@
 
 /* containerapplicazione */
 .container_app {
-  width: 1200px;
+  width: 80%;
   height: calc(100vh - 40px);
   margin: auto;
-  background-color: red;;
   margin-top: -80px;
 }
 /* /containerapplicazione */
@@ -126,17 +125,17 @@
   background-color: #8edafc;
 }
 
-.second_box_sinistra div p {
+ div .notifiche p {
   background-color: #8edafc;
   padding: 0 5px;
 }
 
-.second_box_sinistra div p.primo {
+ div p.primo {
   font-size: 13px;
   color: #436777;
 }
 
-.second_box_sinistra div p.secondo {
+ div p.secondo {
   text-decoration: underline;
   font-size: 10px;
   background-color: #8edafc;
@@ -152,6 +151,34 @@
   height: 35px;
   background-color: #fff;
 }
+
+/* icona lente */
+.third_box_sinistra .lente {
+  width: 13%;
+  height: 100%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 35px;
+}
+
+.third_box_sinistra .lente i {
+  color: lightgrey;
+  background-color: #fff;
+  font-size: 13px;
+}
+
+.third_box_sinistra .lente_text {
+  width: 87%;
+  height: 100%;
+  line-height: 35px;
+}
+
+.third_box_sinistra .lente_text p {
+  font-size: 10px;
+  background-color: #fff;
+  color: lightgrey;
+}
+/* /icona lente */
 /*/ search */
 
 /* box profili utenti */
@@ -171,7 +198,30 @@
   width: 100%;
   height: 45px;
   background-color: #eaeaea;
+  justify-content: space-between;
 }
+
+/* img utante risposta e nome*/
+.box_destra_up {
+  width: 30%;
+  height: 45px;
+  background-color: #eaeaea;
+}
+
+div.notifiche p.second  {
+ background-color: #eaeaea;
+ padding: 0 5px;
+ height:50%;
+}
+
+.box_sinistra_up {
+  width: 40%;
+}
+
+
+/*/ img utante risposta e nome*/
+
+
 /* div nome utente */
 
 /* div chat */
@@ -187,7 +237,57 @@
   .third_box_destra {
     width: 100%;
     height: 45px;
-    background-color: violet;
+    background-color: #f3eeea;
   }
+
+  /* icona smile */
+  .cont_smile{
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    line-height: 45px;
+    background-color: #f3eeea;
+
+  }
+
+  .icon_bottom {
+    font-size: 20px;
+    color:grey;
+    background-color: #f3eeea;
+  }
+  /* icona smile */
+
+  /* label input */
+  .cont_input  {
+    width: 80%;
+    height: 100%;
+    background-color: #f3eeea;
+    text-align: center;
+    line-height: 45px;
+  }
+
+  #text_send {
+    width: 90%;
+    border radius: 800px;
+    background-color: #fff;
+    padding: 5px 5px;
+    border: 1px solid transparent;
+  }
+
+
+  /*/ label input */
+
+  /* icona send input */
+  .cont_send {
+    width: 10%;
+    height: 100%;
+    text-align: center;
+    line-height: 45px;
+    background-color: #f3eeea;
+  }
+  /* /icona send input */
+
   /* <!-- /div tastiera --> */
   /* /colonna destra */
+
+/

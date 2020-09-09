@@ -48,8 +48,13 @@
           </div>
           <!-- / ricevi notifiche -->
           <!-- search -->
-          <div class="third_box_sinistra">
-
+          <div class="third_box_sinistra flex">
+            <div class="lente">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="lente_text">
+              <p>Cerca o inizia una nuova chat</p>
+            </div>
           </div>
           <!--/ search -->
           <!-- box profili utenti -->
@@ -63,17 +68,75 @@
         <!-- colonna destra -->
         <div class="colonna_destra">
           <!-- div nome utente -->
-          <div class="first_box_destra">
+          <div class="first_box_destra flex">
+            <!-- img utente risposta e nome -->
+            <div class="box_destra_up flex">
+              <div class="img_risp box_img_profilo">
+                <img class="img_profilo" src="img/avatar_2.jpg" alt="foto profilo">
+              </div>
+              <div class="notifiche second">
+                <p class="primo second">Michele</p>
+                <p class="secondo second">ultimo accesso oggi alle:</p>
+              </div>
+            </div>
+            <!-- img utente risposta e nome -->
+            <!-- icone barra superiore destra -->
+            <div class="icon_box_profilo">
+              <!-- lista icone -->
+              <ul>
+                <li> <i class="fas fa-search"></i></li>
+                <li><i class="fas fa-paperclip"></i></li>
+                <li><i class="fas fa-ellipsis-v"></i></li>
+              </ul>
+              <!-- lista icone -->
+            </div>
 
+            <!--/ icone barra superiore destra -->
           </div>
           <!--/ div nome utente -->
           <!-- div chat -->
           <div class="second_box_destra">
+            <!-- box chat -->
+            <!-- lista  messaggi -->
+            <ul class="lista_messaggi">
+
+            </ul>
+
+
+            <!--/ lista div messaggi -->
+
+            <div class="template">
+              <li>
+                <p></p>
+              </li>
+            </div>
+            <!-- /box chat -->
 
           </div>
           <!--/ div chat -->
           <!-- div tastiera -->
-          <div class="third_box_destra">
+          <div class="third_box_destra flex">
+            <!-- prima icona smile -->
+            <div class="cont_smile">
+              <i class="fas fa-smile icon_bottom"></i>
+            </div>
+            <!--/ prima icona smile -->
+            <!-- label input -->
+            <div class="cont_input">
+              <input id="text_send" type="text">
+
+            </div>
+            <!--/ label input -->
+            <!-- icona send input -->
+            <div class="cont_send">
+              <i id="sender" class="far fa-paper-plane icon_bottom"></i>
+
+            </div>
+            <!--/ icona send input -->
+
+
+
+
 
           </div>
           <!-- div tastiera -->
