@@ -4,10 +4,10 @@ $(document).ready(function (){
     function(){
       var input = $("#text_send").val();
       console.log(input);
-      var a = $(".template").clone();
+      var a = $(".template p").clone();
       console.log(a);
       a.prepend(input);
-      $(".message_row p").append(a);
+      $("#testo").append(a);
       $("#text_send").val("");
      })
     });
