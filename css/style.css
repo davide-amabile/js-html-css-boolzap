@@ -7,6 +7,10 @@
 .flex {
   display: flex;
 }
+
+.hide {
+  display: none;
+}
 /*/ setclassi */
 
 
@@ -188,6 +192,37 @@
   background-color: yellow;
   overflow-y: scroll;
 }
+/* info utente risposta */
+.profilo_amici {
+  width: 100%;
+  background-color: lightgrey;
+  height: 45px;
+  padding: 5px;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.img_amici {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.nomi_amici {
+  margin-left: 10px;
+}
+
+.nomi_amici h3{
+  text-transform: capitalize;
+  font-size: 13px;
+}
+
+.nomi_amici p{
+  font-size: 10px;
+}
+/* info utente risposta */
+
+
 /*/ box profili utenti  */
 
 /*/ colonna sinistra */
@@ -233,29 +268,38 @@ div.notifiche p.second  {
   padding: 50px 50px;
 }
 
-.message_row .messaggio  {
-  max-width: 200px;
-  border-radius: 30px;
-  padding: 10px 10px;
-  margin:20px;
+.message_row, .message_row2  {
+  display: flex;
+  margin: 10px 0;
+}
 
+.messaggio{
+  position: relative;
+  max-width: 350px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.orologio {
+  font-size: 8px;
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+}
+
+.message_row.right {
+  justify-content: flex-end;
+}
+
+.message_row.right .messaggio {
+  background-color: lightgreen;
 }
 
 /* .messaggio p {
   max-width: 200px;
 } */
 
-.end {
-  justify-content: flex-end;
-}
-
-.green {
-  background-color: green;
-}
-
-.white {
-  background-color: #fff;
-}
 /* div chat */
 
   /* <!-- div tastiera --> */
@@ -315,4 +359,7 @@ div.notifiche p.second  {
   /* <!-- /div tastiera --> */
   /* /colonna destra */
 
-/
+/* template */
+.template{
+  display: none;
+}
