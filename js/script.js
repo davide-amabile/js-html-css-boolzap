@@ -35,6 +35,31 @@ $(document).ready(function (){
 
       }
      })
-     // crea evento ricerca per lettere
 
+
+     // crea evento ricerca per lettere
+     $("#search_name").keyup(
+       function (){
+         // creare variabile che prende il valore di search_name
+         var input = $("#search_name").val().toLowerCase();
+         // creare variabile che richiama i nomi_amici
+         var listaNomi = $(".nomi_amici .contatto");
+         // creare ciclo each
+         listaNomi.each( function(){
+         // creare variabile per l'elenco
+         var a = $(this).text();
+         // creare condizione con includes
+         if ( a.includes(input) == true ) {
+           // se le lettere ci far apparire il div
+          $(this).parents(".profilo_amici").show();
+        } else {
+          // se non ci sono far sparire il div
+          $(this).parents(".profilo_amici").hide();
+        }
+
+         });
+       }
+       // fine funzione
+     );
+     // fine evento
     });
