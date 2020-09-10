@@ -62,4 +62,12 @@ $(document).ready(function (){
        // fine funzione
      );
      // fine evento
+
+     // creare evento far apparire icona quando entro nel messaggio
+     $("#angle_down").hover(
+       function(){
+        $(this).toggleClass("hide");
+       }
+     );
+     // fine evento
     });

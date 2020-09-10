@@ -296,7 +296,7 @@ div.notifiche p.second  {
   background-color: lightgreen;
 }
 
-.angle_down {
+#angle_down {
   font-size: 10px;
   color: lightgrey;
   position: absolute;
