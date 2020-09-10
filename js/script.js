@@ -32,8 +32,10 @@ $(document).ready(function (){
         // appedo sempre al box chat
         $(".second_box_destra").append(templateRisp);
       },1000);
-
       }
+      // fine evento
+
+
      })
 
 
@@ -64,7 +66,7 @@ $(document).ready(function (){
      // fine evento
 
      // creare evento click peer far apparire il menu_delete
-     $(".angle_down").click(
+     $(document).on("click", ".angle_down",
        function(){
         $(this).siblings(".menu_delete").toggleClass("hide");
        }
@@ -72,7 +74,7 @@ $(document).ready(function (){
      // fine evento
 
      // creare evento click per far eliminare il messaggio
-     $(".delete_button").click(
+     $(document).on("click", ".delete_button",
        function(){
         $(this).parents(".message_row").remove();
        }
