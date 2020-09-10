@@ -296,12 +296,17 @@ div.notifiche p.second  {
   background-color: lightgreen;
 }
 
-#angle_down {
-  font-size: 10px;
+.angle_down {
+  font-size: 15px;
   color: lightgrey;
   position: absolute;
   top: 5px;
   right: 5px;
+  display: none;
+}
+
+.messaggio:hover .angle_down {
+  display: block;
 }
 
 .menu_delete {

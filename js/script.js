@@ -63,10 +63,18 @@ $(document).ready(function (){
      );
      // fine evento
 
-     // creare evento far apparire icona quando entro nel messaggio
-     $("#angle_down").hover(
+     // creare evento click peer far apparire il menu_delete
+     $(".angle_down").click(
        function(){
-        $(this).toggleClass("hide");
+        $(this).siblings(".menu_delete").toggleClass("hide");
+       }
+     );
+     // fine evento
+
+     // creare evento click per far eliminare il messaggio
+     $(".delete_button").click(
+       function(){
+        $(this).parents(".message_row").remove();
        }
      );
      // fine evento
