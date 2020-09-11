@@ -96,6 +96,10 @@ $(document).ready(function (){
        $(".second_box_destra").removeClass("active");
        // associo le chat e il profilo utente con i numeri dell'attributo
        $((".second_box_destra[data-chat=" + attributoPro + "]")).addClass("active");
+       // cambiare il profilo nella barra sopra la charset
+       // aggiungo a tutti la classe third_box_destra
+       $(".first_box_destra").addClass("hide");
+       $((".first_box_destra[data-pro-amici=" + attributoPro + "]")).removeClass("hide");
 
 
       });

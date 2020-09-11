@@ -249,6 +249,10 @@
   background-color: #eaeaea;
 }
 
+.box_destra_up.hide {
+  display: none;
+}
+
 div.notifiche p.second  {
  background-color: #eaeaea;
  padding: 0 5px;
