@@ -18,7 +18,7 @@ $(document).ready(function (){
       // $(".second_row").hide();
 
       // aggiungere il template nel box_destra_up
-      $(".second_box_destra").append(templateClonato);
+      $(".second_box_destra.active").append(templateClonato);
       // svuotare il value uma volta cliccato
       $("#text_send").val("");
 
@@ -30,7 +30,7 @@ $(document).ready(function (){
         templateRisp.find(".testo_inv1").text("ok");
         templateRisp.find(".orologio1").text("21.00");
         // appedo sempre al box chat
-        $(".second_box_destra").append(templateRisp);
+        $(".second_box_destra.active").append(templateRisp);
       },1000);
       }
       // fine evento
@@ -99,9 +99,10 @@ $(document).ready(function (){
        // cambiare il profilo nella barra sopra la charset
        // aggiungo a tutti la classe third_box_destra
        $(".first_box_destra").addClass("hide");
+       // tolgo la classe hide al box con lo stesso numero attributo
        $((".first_box_destra[data-pro-amici=" + attributoPro + "]")).removeClass("hide");
 
-
       });
-     // fine evento
+     // fine funzione
     });
+    // fine evento
