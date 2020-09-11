@@ -34,9 +34,8 @@ $(document).ready(function (){
       },1000);
       }
       // fine evento
-
-
      })
+    // creare evento keyup su input e far stampare il messaggio
 
 
      // crea evento ricerca per lettere
@@ -45,12 +44,15 @@ $(document).ready(function (){
          // creare variabile che prende il valore di search_name
          var input = $("#search_name").val().toLowerCase();
          // creare variabile che richiama i nomi_amici
+         // N.B.: facendo così creo l'elenco senza dover creare la variabile con l'array vuoto e poi pusshare gli elementi
          var listaNomi = $(".nomi_amici .contatto");
          // creare ciclo each
+         // N.B.: each equivale al ciclo for e while
          listaNomi.each( function(){
          // creare variabile per l'elenco
          var a = $(this).text();
          // creare condizione con includes
+         // N.B.: ho dato == true perchè includes da valore true
          if ( a.includes(input) == true ) {
            // se le lettere ci far apparire il div
           $(this).parents(".profilo_amici").show();
@@ -66,6 +68,7 @@ $(document).ready(function (){
      // fine evento
 
      // creare evento click peer far apparire il menu_delete
+     //N.B.: ho usato $("document") per includere tutti gli .angle_down se no non mi funziona per quelli clonato
      $(document).on("click", ".angle_down",
        function(){
         $(this).siblings(".menu_delete").toggleClass("hide");
@@ -79,5 +82,22 @@ $(document).ready(function (){
         $(this).parents(".message_row").remove();
        }
      );
+     // fine evento
+
+     // creare evento click su profilo_amici
+     $(".profilo_amici").click(function (){
+       // aggiungre rimuovere la classe active a tutti gli elementi e aggiungerla dove clicco
+       $(".profilo_amici").removeClass("active");
+       $(this).addClass("active");
+       // quando clicco sun profilo si deve aprire la chat corrispondente
+       // estraggo l'attributo data-profilo
+       var attributoPro = $(this).attr("data-profilo");
+       // elimino le classi active a tutte lechat
+       $(".second_box_destra").removeClass("active");
+       // associo le chat e il profilo utente con i numeri dell'attributo
+       $((".second_box_destra[data-chat=" + attributoPro + "]")).addClass("active");
+
+
+      });
      // fine evento
     });

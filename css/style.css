@@ -11,6 +11,8 @@
 .hide {
   display: none;
 }
+
+
 /*/ setclassi */
 
 
@@ -202,6 +204,10 @@
   border: 1px solid black;
 }
 
+.profilo_amici.active {
+  background-color: grey;
+}
+
 .img_amici {
   width: 40px;
   height: 40px;
@@ -266,6 +272,11 @@ div.notifiche p.second  {
   background-color: lightblue;
   overflow-y: scroll;
   padding: 50px 50px;
+  display:none;
+}
+
+.second_box_destra.active {
+  display: block;
 }
 
 .message_row, .message_row2  {
