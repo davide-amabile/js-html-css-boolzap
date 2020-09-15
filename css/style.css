@@ -20,6 +20,9 @@
 /* * {
   background-color: #d9dbd3;
 } */
+.big_container {
+  position: relative;
+}
 
 /* bara verde sfondo */
 .green_sfondo {
@@ -28,13 +31,22 @@
   background-color: #009688;
 }
 /* bara verde sfondo */
+/* sfondo */
+.sfondo_pagina {
+  background-color: #d9dbd3;
+  height: calc(100vh - 100px);
+  width: 100%;
+}
+/* /sfondo */
 
 /* containerapplicazione */
 .container_app {
-  width: 80%;
-  height: calc(100vh - 40px);
-  margin: auto;
-  margin-top: -80px;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+width: 80%;
+height: calc(100vh - 40px);
 }
 /* /containerapplicazione */
 
@@ -191,13 +203,13 @@
 .fourth_box_sinistra {
   width: 100%;
   height:calc(100% - 135px);
-  background-color: yellow;
+  background-color: #fff;
   overflow-y: scroll;
 }
 /* info utente risposta */
 .profilo_amici {
   width: 100%;
-  background-color: lightgrey;
+  background-color: #fff;
   height: 45px;
   padding: 5px;
   align-items: center;
@@ -205,7 +217,7 @@
 }
 
 .profilo_amici.active {
-  background-color: grey;
+  background-color:  lightgrey;
 }
 
 .img_amici {
@@ -273,7 +285,9 @@ div.notifiche p.second  {
 .second_box_destra {
   width: 100%;
   height: calc(100% - 90px);
-  background-color: lightblue;
+  background-image:  url("../img/mine.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   overflow-y: scroll;
   padding: 50px 50px;
   display:none;
